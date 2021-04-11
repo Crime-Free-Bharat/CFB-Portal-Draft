@@ -4,6 +4,16 @@
 <title>Mission Crime Free Bharat</title> 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+##search validator
+function validateForm() {
+  var x = document.forms["myForm"]["search"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
 <style>
 .vl {
   border-left: 2px solid black;
@@ -109,11 +119,11 @@
         </li>  
         <li class="active"><a href="#" class="drop">Media</a>
           <ul>
-			<li><a href="News & Media.html">News & Media</a></li>
-            <li><a href="#">YouTube Feeds</a></li>
-            <li><a href="#">Instagram Feeds</a></li>
-            <li><a href="#">Twiter Feeds</a></li>
-            <li><a href="#">LinkedIn Feeds</a></li>
+			<li><a href="News & Media.html">News & Press</a></li>
+            <li><a href="https://www.youtube.com/channel/UCAmspcG5fQmPgi1LxBprpRg">YouTube Feeds</a></li>
+            <li><a href="https://www.instagram.com/crimefreebharat_official/">Instagram Feeds</a></li>
+            <li><a href="https://twitter.com/bharat_free">Twiter Feeds</a></li>
+            <li><a href="https://www.linkedin.com/company/crimefreebharat/?originalSubdomain=in">LinkedIn Feeds</a></li>
         </ul>   
         </li>  
         <li class="active"><a href="#" class="drop">Divisions of CFB</a>
@@ -151,9 +161,10 @@
 
   
 <div class="" style="margin-right: 25px; margin-left: 25px;">
-   
+	<a style="color: brown" href=index.html><h3 style="color:black">HOME></a>  Media> News & Press Release
+	<hr>
       <!-- ################################################################################################ -->
-      <figure id="slide-1"><a class="view" href="https://www.youtube.com/results?search_query=crime+free+bharat"><img src="News & Press Release.png" alt="Link to youtube" style="width: 1500px;></a>
+      <figure id="slide-1"><a class="view" ><img src="News & Press Release.png" alt="Link to youtube" style="width: 1500px;></a>
 	</div>
   </div>
 </div>
@@ -201,12 +212,12 @@ form.example::after {
 }
 </style>
 <h2>Search For News:</h2>
-<form class="example" action="/action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form><br>
+<form class="example" name="myForm" action="/action_page.php">
+  <input type="text" placeholder="Search News.." class="search" name="search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search News...'">
+  <button onclick="validateForm()" type="submit"><i class="fa fa-search"></i></button>
+</form>
 <br>
-
+<br>
 
 
 <style>
@@ -261,12 +272,14 @@ section::after {
       <li><a href="https://www.youtube.com/channel/UCAmspcG5fQmPgi1LxBprpRg">YouTube</a></li>
       <li><a href="https://www.linkedin.com/company/crimefreebharat/?originalSubdomain=in">LinkedIn</a></li>
       <li><a href="https://www.facebook.com/Crime-Free-Bharat-100732901804886/">Facebook</a></li>
+	  <li><a href="https://www.instagram.com/crimefreebharat_official/">Instagram</a></li>
+	  <li><a href="https://twitter.com/bharat_free">Twitter</a></li>
     </ul>
   </nav>
   
   <article>
     	  
-	  <h3 style="color:brown">Cotact US</h3>
+	  <h3 style="color:brown">Contact US</h3>
       <h2 style="color:black">
 		Mission Crime Free Bharat<br>
 		Law Enforcement Agency<br>
